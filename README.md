@@ -2,29 +2,51 @@
 
 # React + Vite
 
-[commit-1] <br>
-npm i @tailwindcss/typography <br>
-=> Tailwind CSS that provides a set of typographic defaults and helper classes to style typography easily. <br>
+## Project details : What i'v Done.
 
-npm i react router-dom <br>
-=> set link to Components. <br>
+[commit-1]
 
-[commit-2] <br>
-npm i react-hook-form. <br>
-=> control Userr Acount Crreation. <br>
-=> called r-hook-form. <br>
-=> make dynamic Form Control for users reg value. <br>
+### Tailwind CSS
 
-[commit-3] <br>
-=> reqiured value <br>
-=> reqired Error <br>
-=> get user Valu by click <br>
+    =>npm i @tailwindcss/typography
+    => Tailwind CSS that provides a set of typographic defaults and helper classes to style typography easily.
 
-[commit-4] <br>
+### Set Basci Routes
 
-### Fake Log in and Log Out <br>
+    ##npm i react router-dom
+    => set link to Components.
 
-    => Fake valid input and click log in to Home Page. <br>
-    => Create Navigation Page. <br>
-    => Create Logout Component. <br>
-    => Click Log Out to Exit Home Page. <br>
+[commit-2]
+
+### Form Creating
+
+    ##npm i react-hook-form.
+    => control Userr Acount Crreation.
+    => called r-hook-form.
+    => making dynamic Form Control for users reg value.
+
+[commit-3]
+
+### set Dynamic user Form
+
+    => reqiured value
+    => reqired Error
+    => get user Valu by click
+
+[commit-4]
+
+### Fake Log in and Log Out
+
+    => Fake valid input and click log in to Home Page.
+    => Create Navigation Page.
+    => Create Logout Component.
+    => Click Log Out to Exit Home Page.
+
+[commit-5]
+
+### Auth Use by context
+
+    => Create context with Provider.
+    => Create useAuth for context get Direct value by call
+    => useDebugValue for check user logged info.
+    => AuthProvider packed al Router and apps
