@@ -2,14 +2,15 @@
 
 # React + Vite
 
-## Project details : What i'v Done.
+## Project details : What I'v Done.
 
 [commit-1]
 
 ### Tailwind CSS
 
     =>npm i @tailwindcss/typography
-    => Tailwind CSS that provides a set of typographic defaults and helper classes to style typography easily.
+    => Tailwind CSS that provides a set of typographic defaults
+     and helper classes to style typography easily.
 
 ### Set Basci Routes
 
@@ -50,3 +51,12 @@
     => Create useAuth for context get Direct value by call
     => useDebugValue for check user logged info.
     => AuthProvider packed al Router and apps
+
+[commit-6]
+
+### Conditional Routs
+
+    => get user Value to AuthContext.
+    => set Conditional Routes.
+    => Outlet (routes) Nvbar.
+    => Flush User Info After Logout.

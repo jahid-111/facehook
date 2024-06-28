@@ -1,9 +1,11 @@
 import { useForm } from "react-hook-form";
 import Field from "../common/Field";
 import { useNavigate } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
-const Loginform = () => {
+const LoginForm = () => {
   const navigateHomePage = useNavigate();
+  const { setAuth } = useAuth();
   const {
     register,
     handleSubmit,
@@ -11,7 +13,9 @@ const Loginform = () => {
   } = useForm();
 
   const submitForm = (formData) => {
-    console.log(formData);
+    //here Would be Async
+    const user = { ...formData };
+    setAuth({ user });
     navigateHomePage("/");
   };
 
@@ -62,4 +66,5 @@ const Loginform = () => {
   );
 };
 
-export default Loginform;
+export default LoginForm;
+//change comp name f to F "NOTE"
