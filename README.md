@@ -1,8 +1,15 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[commit-1]
+npm i @tailwindcss/typography
+    => Tailwind CSS that provides a set of typographic defaults and helper classes to style typography easily.
 
-Currently, two official plugins are available:
+npm i react router-dom
+    => set link to Components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+[commit-2]
+npm i react-hook-form
+    => control Userr Acount Crreation.
+    => called r-hook-form
+    => make dynamic from control for users reg value.
