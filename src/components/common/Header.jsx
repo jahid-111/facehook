@@ -1,13 +1,15 @@
 import Logo from "../../assets/images/logo.svg";
-
 import HomeIcon from "../../assets/icons/home.svg";
 import Notification from "../../assets/icons/notification.svg";
 import UserAvatar from "../../assets/images/avatars/avatar_1.png";
 
 import { Link } from "react-router-dom";
 import LogOut from "../auth/Logout";
+import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
+  const { auth } = useAuth();
+  // console.log(auth.user.fistName);
   return (
     <div>
       <nav className="sticky top-0 z-50 border-b border-[#3F3F3F] bg-[#1E1F24] py-4">
@@ -30,11 +32,13 @@ const Header = () => {
             <LogOut></LogOut>
 
             <button className="flex-center !ml-8 gap-3">
-              <span className="text-lg font-medium lg:text-xl">Sumit</span>
+              <span className="text-lg font-medium lg:text-xl">
+                {auth?.user?.firstName}
+              </span>
               <img
                 className="max-h-[32px] max-w-[32px] lg:max-h-[44px] lg:max-w-[44px]"
-                src={UserAvatar}
-                alt=""
+                src={auth?.user?.avatar}
+                alt={auth?.user?.firstName}
               />
             </button>
           </div>

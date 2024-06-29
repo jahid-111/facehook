@@ -75,8 +75,18 @@
 
 [commit-8]
 
+### API user Token Handle
+
     => Create Context Token.
     => useAxis hook for Token control (if Expired).
     => Control Token by Axios Method and get token.
     => requestInterceptors - token
     => responseInterceptors - token
+
+[commit-8]
+
+### Fetch Profile Data
+
+    => By Async load Data.
+    => Set Requirement store in useState by UseEffect.
+    => Get Data in Profile as Conditional.
