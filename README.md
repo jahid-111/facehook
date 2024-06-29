@@ -1,6 +1,6 @@
 # FaceHook
 
-# React + Vite
+## With React + Vite
 
 ## Project details : What I'v Done.
 
@@ -8,21 +8,21 @@
 
 ### Tailwind CSS
 
-    =>npm i @tailwindcss/typography
+    $ npm i @tailwindcss/typography
     => Tailwind CSS that provides a set of typographic defaults
      and helper classes to style typography easily.
 
-### Set Basci Routes
+### Set Basic Routes
 
-    ##npm i react router-dom
+    $ npm i react router-dom
     => set link to Components.
 
 [commit-2]
 
 ### Form Creating
 
-    ##npm i react-hook-form.
-    => control Userr Acount Crreation.
+    $ npm i react-hook-form.
+    => control User Account Creation.
     => called r-hook-form.
     => making dynamic Form Control for users reg value.
 
@@ -30,9 +30,9 @@
 
 ### set Dynamic user Form
 
-    => reqiured value
-    => reqired Error
-    => get user Valu by click
+    => required value
+    => required Error
+    => get user Value by click
 
 [commit-4]
 
@@ -58,5 +58,17 @@
 
     => get user Value to AuthContext.
     => set Conditional Routes.
-    => Outlet (routes) Nvbar.
+    => Outlet (routes) Navbar.
     => Flush User Info After Logout.
+
+[commit-7]
+
+### Fetch Post Login Submit Button
+
+    $ npm i axios
+    => Async the Login Submit.
+    => Crate env for URL.
+    => Send URL/formValue.
+    => By response condition get Token and User.
+    => Handle Error from hookForm.
+    => Set UI To Error hookForm.

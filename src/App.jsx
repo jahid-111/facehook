@@ -9,18 +9,16 @@ import PrivateRoutes from "./routes/PrivateRoutes";
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route element={<PrivateRoutes></PrivateRoutes>}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/me" element={<Profile />} />
-        </Route>
+    <Routes>
+      <Route element={<PrivateRoutes></PrivateRoutes>}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/me" element={<Profile />} />
+      </Route>
 
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/registrationPage" element={<RegistrationPage />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </>
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/registrationPage" element={<RegistrationPage />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
