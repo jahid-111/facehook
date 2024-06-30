@@ -107,10 +107,16 @@
     => Private Routes Setup..............
     => !!AuthToken User's UI Entrance.
 
-[commit-12] 
+[commit-12]
 
-### Action Set In Profile 
-    
+### Action Set In Profile
+
     => Action By Action Get Data.
-    
 
+[commit-13]
+
+### Load Sample Data Nav UI
+
+    => Conditional Load Home Page {state?.user ?? auth?.user}.
+    => User Photo Load On Home Page.
+    => Create Profile Components.
