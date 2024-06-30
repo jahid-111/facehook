@@ -97,3 +97,12 @@
 
     => Action Name.
     => Action logic.
+
+[commit-11]
+
+### Profile Data for Context
+
+    => Hooks useProfile();
+    => User Data Handle to UI in Globally.
+    => Private Routes Setup..............
+    => !!AuthToke User's UI Entrance.
