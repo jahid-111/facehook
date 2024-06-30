@@ -15,7 +15,7 @@ const profileReducer = (state, action) => {
         loading: true,
       };
     }
-    case actions.profile.DATA_FETCHED: {
+    case actions.profile.DATA_FETCHED_DONE: {
       return {
         ...state,
         loading: false,

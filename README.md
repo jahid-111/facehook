@@ -105,4 +105,12 @@
     => Hooks useProfile();
     => User Data Handle to UI in Globally.
     => Private Routes Setup..............
-    => !!AuthToke User's UI Entrance.
+    => !!AuthToken User's UI Entrance.
+
+[commit-12] 
+
+### Action Set In Profile 
+    
+    => Action By Action Get Data.
+    
+
