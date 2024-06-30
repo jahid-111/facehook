@@ -83,10 +83,17 @@
     => requestInterceptors - token
     => responseInterceptors - token
 
-[commit-8]
+[commit-9]
 
 ### Fetch Profile Data
 
     => By Async load Data.
     => Set Requirement store in useState by UseEffect.
     => Get Data in Profile as Conditional.
+
+[commit-10]
+
+### Reducers for Profile Actions
+
+    => Action Name.
+    => Action logic.
