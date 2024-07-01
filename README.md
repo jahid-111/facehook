@@ -151,3 +151,10 @@
 ### Post Component's
 
     => Post Components Skeleton.
+
+[commit-18]
+
+### Post Header Data
+
+    => Post Header Set Data.
+    => getDateHowLongFromNow()  For Header on Posting.

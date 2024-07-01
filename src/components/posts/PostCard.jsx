@@ -7,7 +7,7 @@ import PostComments from "./PostComments";
 const PostCard = ({ post }) => {
   return (
     <article className=" card mt-6 lg:mt-8">
-      <PostHeader></PostHeader>
+      <PostHeader post={post}></PostHeader>
       <PostBody></PostBody>
       <PostAction></PostAction>
       <PostComments></PostComments>
