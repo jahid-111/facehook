@@ -158,3 +158,9 @@
 
     => Post Header Set Data.
     => getDateHowLongFromNow()  For Header on Posting.
+
+[commit-18]
+
+### Avatar global
+
+    => UseAvatar()
