@@ -144,4 +144,10 @@
     => Click Open File. handleImageUpload();
     => Displaying Image by Async Post. updateImageDisplay();
 
-#### NOTE : <u>"Not Used Actual HTML Native File Tag<u>
+#### NOTE : <u>Not Used Actual HTML Native File Tag<u>
+
+[commit-17]
+
+### Post Component's
+
+    => Post Components Skeleton.
