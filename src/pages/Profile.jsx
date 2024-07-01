@@ -3,6 +3,8 @@ import useAxios from "../hooks/useAxios";
 import useAuth from "../hooks/useAuth";
 import useProfile from "../hooks/useProfile";
 import { actions } from "../actions";
+import ProfileInfo from "../components/profile/ProfileInfo";
+import MyPosts from "../components/profile/MyPosts";
 
 const Profile = () => {
   const { state, dispatch } = useProfile();
@@ -42,11 +44,10 @@ const Profile = () => {
   return (
     <>
       {state.user ? (
-        <div>
-          <h1>Welcome, {state.user.firstName}</h1>
-          <h1> {state.user.lastName}</h1>
-          <h1>Posts: {state.post.length}</h1>
-        </div>
+        <>
+        <ProfileInfo></ProfileInfo>
+        <MyPosts></MyPosts>
+        </>
       ) : (
         <h3>No user data available</h3>
       )}

@@ -120,3 +120,10 @@
     => Conditional Load Home Page {state?.user ?? auth?.user}.
     => User Photo Load On Home Page.
     => Create Profile Components.
+
+[commit-14]
+
+### Profile UI to View
+    
+    => Components Structured By Load Data.
+    
