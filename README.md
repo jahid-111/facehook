@@ -109,7 +109,7 @@
 
 [commit-12]
 
-### Action Set In Profile
+### Reducers Action Set In Profile
 
     => Action By Action Get Data.
 
@@ -124,6 +124,14 @@
 [commit-14]
 
 ### Profile UI to View
-    
+
     => Components Structured By Load Data.
-    
+
+[commit-15]
+
+### Bio Edit
+
+    => Bio Component Structure.
+    => handleEditBio();
+    => Patch Call Edit Bio.
+    => Action Reducer Logic.

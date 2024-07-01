@@ -30,7 +30,7 @@ const Profile = () => {
         dispatch({
           type: actions.profile.DATA_FETCH_ERROR,
           error: error.message,
-        }); //note  
+        });
       }
     };
 
@@ -45,8 +45,8 @@ const Profile = () => {
     <>
       {state.user ? (
         <>
-        <ProfileInfo></ProfileInfo>
-        <MyPosts></MyPosts>
+          <ProfileInfo></ProfileInfo>
+          <MyPosts></MyPosts>
         </>
       ) : (
         <h3>No user data available</h3>
