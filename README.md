@@ -135,3 +135,13 @@
     => handleEditBio();
     => Patch Call Edit Bio.
     => Action Reducer Logic.
+
+[commit-16]
+
+### Profile Update handler
+
+    => useRef for Manipulate HTML Node.
+    => Click Open File. handleImageUpload();
+    => Displaying Image by Async Post. updateImageDisplay();
+
+#### NOTE : <u>"Not Used Actual HTML Native File Tag<u>

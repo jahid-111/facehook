@@ -1,8 +1,6 @@
 import Logo from "../../assets/images/logo.svg";
 import HomeIcon from "../../assets/icons/home.svg";
 import Notification from "../../assets/icons/notification.svg";
-import UserAvatar from "../../assets/images/avatars/avatar_1.png";
-
 import { Link } from "react-router-dom";
 import LogOut from "../auth/Logout";
 import useAuth from "../../hooks/useAuth";
@@ -34,13 +32,12 @@ const Header = () => {
               <img src={Notification} alt="Notification" />
             </button>
             <LogOut></LogOut>
-
             <button className="flex-center !ml-8 gap-3">
               <span className="text-lg font-medium lg:text-xl">
                 {user?.firstName} {user?.lastName}
               </span>
               <img
-                className="max-h-[32px] max-w-[32px] lg:max-h-[44px] lg:max-w-[44px]"
+                className="max-h-[32px] rounded-full max-w-[32px] lg:max-h-[44px] lg:max-w-[44px]"
                 src={`${import.meta.env.VITE_SERVER_BASE_URL}/${user?.avatar}`}
                 alt={user?.firstName}
               />
