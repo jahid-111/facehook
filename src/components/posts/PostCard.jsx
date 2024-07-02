@@ -8,9 +8,12 @@ const PostCard = ({ post }) => {
   return (
     <article className=" card mt-6 lg:mt-8">
       <PostHeader post={post}></PostHeader>
-      <PostBody></PostBody>
-      <PostAction></PostAction>
-      <PostComments></PostComments>
+      <PostBody poster={post?.image} content={post?.content}></PostBody>
+      <PostAction
+        postId={post?.id}
+        commentsCount={post?.comments.length}
+      ></PostAction>
+      <PostComments post={post}></PostComments>
     </article>
   );
 };

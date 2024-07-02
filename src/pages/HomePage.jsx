@@ -7,8 +7,12 @@ const HomePage = () => {
   console.log(auth);
   return (
     <div>
-      <h3>HOME PAGEE</h3>
-      <Link to="/me"> go to Profile Page</Link>
+      <h3 className=" mb-5">HOME PAGE</h3>
+
+      <Link className=" bg-red-400 px-4 py-4" to="/me">
+        {" "}
+        go to Profile Page
+      </Link>
     </div>
   );
 };

@@ -4,9 +4,17 @@ import DeleteIcon from "../../assets/icons/delete.svg";
 import TimeIcon from "../../assets/icons/time.svg";
 import getDateHowLongFromNow from "../../utils";
 import useAvatar from "../../hooks/useAvatar";
+import { useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 const PostHeader = ({ post }) => {
+  const [showAction, setShowAction] = useState(false);
   const { avatarURL } = useAvatar(post);
+
+  const toggleAction = () => {
+    console.log("TOGGLE");
+    setShowAction(!showAction);
+  };
 
   return (
     <header className="flex items-center justify-between gap-4">
@@ -27,21 +35,23 @@ const PostHeader = ({ post }) => {
         </div>
       </div>
 
-      <div className="relative">
-        <button>
+      <div className="relative ">
+        <button onClick={toggleAction}>
           <img src={ThreeDotsIcon} alt="3dots of Action" />
         </button>
 
-        <div className="action-modal-container hidden">
-          <button className="action-menu-item hover:text-lwsGreen">
-            <img src={EditIcon} alt="Edit" />
-            Edit
-          </button>
-          <button className="action-menu-item hover:text-red-500">
-            <img src={DeleteIcon} alt="Delete" />
-            Delete
-          </button>
-        </div>
+        {showAction && (
+          <div className="action-modal-container">
+            <button className="action-menu-item hover:text-lwsGreen">
+              <img src={EditIcon} alt="Edit" />
+              Edit
+            </button>
+            <button className="action-menu-item hover:text-red-500">
+              <img src={DeleteIcon} alt="Delete" />
+              Delete
+            </button>
+          </div>
+        )}
       </div>
     </header>
   );

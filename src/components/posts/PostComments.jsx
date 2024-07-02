@@ -3,7 +3,7 @@
 
 import React from 'react';
 
-const PostComments = () => {
+const PostComments = ({post}) => {
     return (
         <div>
             Post Comments  

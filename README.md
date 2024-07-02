@@ -159,8 +159,16 @@
     => Post Header Set Data.
     => getDateHowLongFromNow()  For Header on Posting.
 
-[commit-18]
+[commit-19]
 
 ### Avatar global
 
     => UseAvatar()
+
+[commit-20]
+
+### Post Body's Data
+
+    => Toggle Action Poster Body.
+    => Poster View.
+    => Actions in Post Body.
