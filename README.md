@@ -181,3 +181,11 @@
     => CommentsList Component.
     => Comment Button Toggle View CommentList.
     => Set Data CommentList
+
+[commit-22]
+
+### Home Page SetUp With Async Data
+
+    => Home Post Actions
+    => Reducer Actions on Home Page.
+    => Load Data On Home Page As <PostList/>

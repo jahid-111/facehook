@@ -6,9 +6,6 @@ import RegistrationPage from "./pages/RegistrationPage";
 import NotFound from "./pages/NotFound";
 import PrivateRoutes from "./routes/PrivateRoutes";
 
-
-// users comments to view in Profile postteer
-
 function App() {
   return (
     <Routes>

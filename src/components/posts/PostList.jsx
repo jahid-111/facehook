@@ -1,8 +1,6 @@
 import PostCard from "./PostCard";
 
 const PostList = ({ posts }) => {
-  console.log(posts);
-
   return (
     <>
       {!!posts &&
