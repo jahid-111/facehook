@@ -189,3 +189,10 @@
     => Home Post Actions
     => Reducer Actions on Home Page.
     => Load Data On Home Page As <PostList/>
+
+    [commit-23]
+
+### Registration Template and Form
+
+    => Reg Template.
+    => From Reg Input Get Value.
