@@ -1,7 +1,10 @@
 import { useForm } from "react-hook-form";
 import Field from "../common/Field";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const RegistrationForm = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -11,6 +14,22 @@ const RegistrationForm = () => {
 
   const submitForm = async (formData) => {
     console.log(formData);
+    try {
+      const response = await axios.post(
+        `${import.meta.env.VITE_SERVER_BASE_URL}/auth/register`,
+        formData
+      );
+
+      if (response.status === 201) {
+        navigate("/login");
+      }
+    } catch (error) {
+      alert(`Server : ${error.message}`);
+      setError("root.random", {
+        type: "random",
+        message: ` Something Went Wrong ${error.message}`,
+      });
+    }
   };
 
   return (
@@ -68,6 +87,7 @@ const RegistrationForm = () => {
           }`}
         ></input>
       </Field>
+      <p className=" text-red-600 mb-3">{errors?.root?.random?.message}</p>
       <button
         className="auth-input bg-lwsGreen font-bold text-deepDark transition-all hover:opacity-90"
         type="submit"
