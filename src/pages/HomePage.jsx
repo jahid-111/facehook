@@ -4,9 +4,12 @@ import useAxios from "../hooks/useAxios";
 import PostList from "../components/posts/PostList";
 import { actions } from "../actions";
 import { Link } from "react-router-dom";
+import usePost from "../hooks/usePost";
+import NewPost from "../components/posts/NewPost";
+import PostEntry from "../components/posts/PostEntry";
 
 const HomePage = () => {
-  const [state, dispatch] = useReducer(postReducer, initialState);
+  const { state, dispatch } = usePost();
   const { api } = useAxios();
 
   useEffect(() => {
@@ -30,7 +33,7 @@ const HomePage = () => {
       }
     };
     fetchPost();
-  }, [api]);
+  }, [api, dispatch]);
 
   if (state.loading) {
     return <h3>Loading...</h3>;
@@ -46,6 +49,7 @@ const HomePage = () => {
           Go To Profile
         </p>
       </Link>
+      <NewPost></NewPost>
       <PostList posts={state?.posts} />
     </>
   );

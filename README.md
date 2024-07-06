@@ -221,3 +221,11 @@
 ### Post Comment Actions Implement
 
     => User Comments Post and Read.
+
+[commit-27]
+
+### New Post
+
+    => Reducer Update.
+    => Context For Reducers.
+    => Post Components.
