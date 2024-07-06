@@ -13,13 +13,13 @@ const PostCommentList = ({ comments }) => {
           commentText = comment.comment;
         } else if (typeof comment.comment === "object") {
           commentText = JSON.stringify(comment.comment);
-          console.warn(`Comment ${index} is an object:`, comment.comment);
+          // console.warn(`Comment ${index} is an object:`, comment.comment);
         } else {
           commentText = "Invalid comment";
-          console.warn(
-            `Comment ${index} has an invalid type:`,
-            typeof comment.comment
-          );
+          // console.warn(
+          //   `Comment ${index} has an invalid type:`,
+          //   typeof comment.comment
+          // );
         }
 
         return (

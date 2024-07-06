@@ -207,11 +207,17 @@
 
 [commit-25]
 
-### Post Actions and CommentList Bugs
+### Post Liked Actions and CommentList Bugs
 
     => User Liked
     <=  CommentList
 
 ##### Note :
 
-- \* After implement CommentList, in Comment Get Bug <span style="color: red;"> &#x1F41B </span> .
+- \ After implement CommentList, in Comment Get Bug <span style="color: red;"> &#x1F41B </span> .
+
+[commit-26]
+
+### Post Comment Actions Implement
+
+    => User Comments Post and Read.
