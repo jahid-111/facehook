@@ -28,7 +28,7 @@ const PostComments = ({ post }) => {
       </div>
       <div className="mt-4">
         <button
-          onClick={() => setViewMoreComments(!viewMoreComments)}
+          onClick={() => setViewMoreComments(!viewMoreComments)}  
           className="text-gray-300 max-md:text-sm"
         >
           All Comment ▾

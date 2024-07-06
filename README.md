@@ -204,3 +204,14 @@
     => ID Creation in Access.
     => Valid Log In Access.
     => <PostCommentList /> Provide Key Props.
+
+[commit-25]
+
+### Post Actions and CommentList Bugs
+
+    => User Liked
+    <=  CommentList
+
+##### Note :
+
+- \* After implement CommentList, in Comment Get Bug <span style="color: red;"> &#x1F41B </span> .

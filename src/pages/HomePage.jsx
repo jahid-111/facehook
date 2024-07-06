@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   const [state, dispatch] = useReducer(postReducer, initialState);
   const { api } = useAxios();
-  console.log(state);
+
   useEffect(() => {
     dispatch({ type: actions.post.DATA_FETCHING });
 
