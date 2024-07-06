@@ -1,25 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
+import PostEntry from "./PostEntry";
+import useAuth from "../../hooks/useAuth";
 
 const NewPost = () => {
-  return (
-    <div className="card">
-      <div className="flex-center mb-3 gap-2 lg:gap-4">
-        <img
-          className="max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px]"
-          src="./assets/images/avatars/avatar_1.png"
-          alt="avatar"
-        />
+  const [openModal, setOpenModal] = useState(false);
+  const { auth } = useAuth();
+  1;
 
-        <div className="flex-1">
-          <textarea
-            className="h-16 w-full rounded-md bg-lighterDark p-3 focus:outline-none sm:h-20 sm:p-6"
-            name="post"
-            id="post"
-            placeholder="What's on your mind?"
-          ></textarea>
+  return (
+    <>
+      {openModal ? (
+        <PostEntry></PostEntry>
+      ) : (
+        <div className="card">
+          <div className="flex-center mb-3 gap-2 lg:gap-4">
+            <img
+              className="max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px]"
+              src={`${import.meta.env.VITE_SERVER_BASE_URL}/${
+                auth?.user?.avatar
+              }`}
+              alt="avatar"
+            />
+
+            <div className="flex-1">
+              <textarea
+                className="h-16 w-full rounded-md bg-lighterDark p-3 focus:outline-none sm:h-20 sm:p-6"
+                name="post"
+                id="post"
+                placeholder="What's on your mind?"
+                onClick={() => setOpenModal(true)}
+              ></textarea>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

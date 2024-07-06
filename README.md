@@ -229,3 +229,11 @@
     => Reducer Update.
     => Context For Reducers.
     => Post Components.
+
+[commit-28]
+
+### Open New Post Modal Get Value
+
+    => PostEntry Component.
+    => Click TextArea To Open New Post.
+    => Get Value Via Content By Form.
