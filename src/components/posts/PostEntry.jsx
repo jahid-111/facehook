@@ -3,11 +3,11 @@ import useAuth from "../../hooks/useAuth";
 import useAxios from "../../hooks/useAxios";
 import usePost from "../../hooks/usePost";
 import useProfile from "../../hooks/useProfile";
-
 import AddPhoto from "../../assets/icons/addPhoto.svg";
 import Field from "../common/Field";
+import { actions } from "../../actions";
 
-const PostEntry = () => {
+const PostEntry = ({ onCreate }) => {
   const { auth } = useAuth();
   const { dispatch } = usePost();
   const { api } = useAxios();
@@ -22,8 +22,22 @@ const PostEntry = () => {
     setError,
   } = useForm();
 
-  const handlePostSubmit = (formData) => {
+  const handlePostSubmit = async (formData) => {
     console.log(formData);
+    dispatch({ type: actions.post.DATA_FETCHING });
+    try {
+      const response = await api.post(
+        `${import.meta.env.VITE_SERVER_BASE_URL}/posts`,
+        { formData }
+      );
+      if (response.status === 200) {
+        dispatch({ type: actions.post.DATA_CREATED, data: response.data });
+        onCreate(); // setOpenModal(false)
+      }
+    } catch (error) {
+      console.log(error);
+      dispatch({ type: actions.post.DATA_FETCH_ERROR, error: error.errors });
+    }
   };
 
   return (

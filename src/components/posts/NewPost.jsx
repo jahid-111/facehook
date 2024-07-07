@@ -10,7 +10,7 @@ const NewPost = () => {
   return (
     <>
       {openModal ? (
-        <PostEntry></PostEntry>
+        <PostEntry onCreate={() => setOpenModal(false)}></PostEntry>
       ) : (
         <div className="card">
           <div className="flex-center mb-3 gap-2 lg:gap-4">
