@@ -5,7 +5,6 @@ import useAuth from "../../hooks/useAuth";
 const NewPost = () => {
   const [openModal, setOpenModal] = useState(false);
   const { auth } = useAuth();
-  1;
 
   return (
     <>
@@ -15,7 +14,7 @@ const NewPost = () => {
         <div className="card">
           <div className="flex-center mb-3 gap-2 lg:gap-4">
             <img
-              className="max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px]"
+              className=" h-16 w-16 rounded-full"
               src={`${import.meta.env.VITE_SERVER_BASE_URL}/${
                 auth?.user?.avatar
               }`}

@@ -40,7 +40,7 @@ const useAxios = () => {
             console.log(`NEW TOKEN ${token}`);
             originalRequest.headers.Authorization = `Bearer ${token}`;
 
-            return originalRequest;
+            return axios(originalRequest);
           } catch (err) {
             throw err;
           }
@@ -51,7 +51,7 @@ const useAxios = () => {
 
     return () => {
       api.interceptors.request.eject(requestInterceptors);
-      api.interceptors.request.eject(responseInterceptors);
+      api.interceptors.response.eject(responseInterceptors);
     };
   }, [auth, setAuth]);
   return { api };

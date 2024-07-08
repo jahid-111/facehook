@@ -49,7 +49,7 @@ const HomePage = () => {
           Go To Profile
         </p>
       </Link>
-      <NewPost></NewPost>
+      <NewPost post={state?.posts}></NewPost>
       <PostList posts={state?.posts} />
     </>
   );
